@@ -24,6 +24,7 @@ Route::get('firstquestion/{number}', 'QuestionsController@show')->name('firstque
 Route::get('questions/{number}', 'QuestionsController@show2')->name('questions2');
 Route::post('answer/{number}', 'QuestionsController@Answers')->name('Answers');
 
+
 Route::post('start','QuestionsController@start')->name('start');
 
 Route::get('end','QuestionsController@End')->name('end');

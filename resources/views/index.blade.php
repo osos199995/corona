@@ -1,4 +1,4 @@
-<!<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -61,11 +61,171 @@ width: 100%;
 
     }
         .lower-text{
-            width: 50%;
+            width: 30%;
             margin-top: 20%;
             margin-left: 10%;
         }
+    @media (max-width: 576px) {
+        .win-result{
+            background: cyan;
+            width: 24%;
+            margin-top: 4%;
+            margin-left: 35%;
+        }
+        .start{
+            margin-top: 10%;
+            margin-left: 12%;
+        }
+        img.middel{
+            height:150px;
+            width: 150px;
+            margin-left: 106px;
+            margin-top: 10px;
+        }
+        img.middel-text{
+            height:10%;
+            width: 100%;
+            margin-left: 10px;
+            margin-top: 30px;
+        }
+        img.lower-text{
+            height:10%;
+            width: 100%;
+            margin-left: 10px;
+            margin-top: 100px;
+        }
+        img.login-middel{
+            height:10%;
+            width: 100%;
+            margin-left: 80px;
+            margin-top: 30px;
+        }
+        img.login-name{
+            height:10%;
+            width: 100%;
+            margin-left: 10px;
+            margin-top: 30px;
+        }
+        div.form{
+            height:10%;
+            width: 400%;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .question{
+            height:15%;
+            width: 140%;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .answers-right{
+            height:10%;
+            width: 150px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .answers-left{
+            height:10%;
+            width: 150px;
+            margin-left: -100px;
+            margin-top: 10px;
+        }
+       .next{
+           width: 69%;
+    margin-left: -70%;
+    margin-top: -20%;
+     position: absolute;
+        }
+       .span{
+           align-content: center;
+           float: right;
+       }
+       .win-next{
+           margin-left: 130px;
+           margin-top: 10px;
+           width: 200px;
+       }
+        .win-name{
+            margin-left: 160px;
+            color: blue;
+        }
+        .los-text{
+            margin-left: 130px;
+            margin-top: 10px;
+            width: 200px;
+        }
+        .los-result{
+            background: cyan;
+            width: 29%;
+            margin-top: 4%;
+            margin-left: 36%;
+        }
+        .los-text{
+            margin-top: 2%;
+            width: 20%;
+            margin-right: 30%;
+        }
+        .btn btn-primary los{
+            width: 20%;
+            margin-left: 64%;
+            margin-top: 15%;
+        }
+        .los-name{
 
+            margin-left: 32%;
+            color: blue;
+        }
+        .los-next{
+            margin-left: 84px;
+            margin-top: 10px;
+            width: 200px;
+        }
+    }
+    @media (min-width: 992px) {
+        .win-result{
+            background: cyan;
+            width: 12%;
+            margin-top: 4%;
+            margin-left: -7%;
+
+
+
+        }
+       img.middel{ width: 50%;
+            margin-top:10px;
+        }
+        .win-next{
+            margin-top: 2%;
+            width: 20%;
+            margin-right: 30%;
+        }
+        .win-name{
+            margin-left: 1%;
+            color: blue;
+        }
+
+        .los-name{
+
+            margin-left: 8%; color: blue;
+            margin-left: -17px;
+
+        }
+        .los-result{
+            background: cyan; width: 8%; margin-top: 4%;
+        }
+        .btn btn-primary los{
+            width:20%; margin-left: 35%; margin-top: 15%;
+        }
+        .los-next{
+            margin-top: 2%;
+            width: 20%;
+            margin-right: 30%;
+        }
+        .start{
+            margin-top: 10%;
+            margin-left: 20%;
+        }
+    }
 @yield('styles')
     </STYLE>
 </head>

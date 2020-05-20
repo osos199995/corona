@@ -16,7 +16,8 @@ class QuestionsController extends Controller
 //    }
 
     public function Answers(Request $request,$id){
-          $request->validate([
+
+           $request->validate([
            'answer'=>'required',
         ]);
           $question=questions::find($id);

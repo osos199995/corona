@@ -1,8 +1,10 @@
 @extends('index')
 @section('styles')
+
     <style>
 
     </style>
+
 @stop
 
 
@@ -13,11 +15,9 @@
             <img  class="upper-logo" src="{{asset('front_assets/upper_logo.png')}}" alt="">
         </div>
 
-        <div class="row col-md-12 col-md-offset-2 ">
-            <img class="middel"  style="
-
-            width: 50%;
-            margin-top:10px;" src="{{asset('front_assets/middel_logo.png')}}" alt="">
+        <div class="row col-md-12 col-md-offset-2">
+            <img class="middel" style=
+            "" src="{{asset('front_assets/middel_logo.png')}}" alt="">
         </div>
         <div class="row col-md-12 col-md-offset-1">
 
@@ -26,8 +26,7 @@
         </div>
         <div class="row col-md-12 col-md-offset-1">
             <a href="{{route('login')}}">
-                <img style="margin-top: 10%;
-margin-left: 20%;" class="middel-text"  src="{{asset('front_assets/start_btn.png')}}" alt=""></a>
+                <img style="" class="start"  src="{{asset('front_assets/start_btn.png')}}" alt=""></a>
 
         </div>
 
