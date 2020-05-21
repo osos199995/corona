@@ -28,6 +28,9 @@ class QuestionsController extends Controller
                 'state'=>$state->state +1,
                 'count'=>$state->count +1,
              ]);
+              $question=questions::find($id +1);
+              Session::flash('success','ممتاز اجابتك السابقة صحيحة');
+              return view('questions',compact('question','state'));
           }else{
               $state=state::where('user_name',Session::get('user_name'))->first();
 
@@ -35,11 +38,13 @@ class QuestionsController extends Controller
                   'state'=>$state->state +1,
 
               ]);
+              Session::flash('danger','     اجابتك السابقة خاطئة الاجابة الصحيحة هى '  .$question->true_answer);
+              $question=questions::find($id +1);
+              return view('questions',compact('question','state'));
           }
 
 
-        $question=questions::find($id +1);
-        return view('questions',compact('question','state'));
+
 
     }
 

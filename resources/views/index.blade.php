@@ -66,15 +66,31 @@ width: 100%;
             margin-left: 10%;
         }
     @media (max-width: 576px) {
+        .pug {
+            margin-left: 150px;
+        }
+        .upper-logo{
+            width: 148px;
+            float: right;
+            border-color: red;
+            height: 10%;
+            vertical-align: middle;
+            margin-top: 20px;
+
+        }
+        .result-show{
+            margin-left: 45%;
+            margin-bottom: -7%;
+        }
         .win-result{
             background: cyan;
-            width: 24%;
-            margin-top: 4%;
-            margin-left: 35%;
+            width: 28%;
+            margin-top: 27%;
+            margin-left: 35%
         }
         .start{
             margin-top: 10%;
-            margin-left: 12%;
+            left: 23%;
         }
         img.middel{
             height:150px;
@@ -115,25 +131,27 @@ width: 100%;
         .question{
             height:15%;
             width: 140%;
+
+
             margin-left: 20px;
             margin-top: 10px;
         }
         .answers-right{
-            height:10%;
+            height:15%;
             width: 150px;
             margin-left: 20px;
             margin-top: 10px;
         }
         .answers-left{
-            height:10%;
+            height:15%;
             width: 150px;
             margin-left: -100px;
             margin-top: 10px;
         }
        .next{
            width: 69%;
-    margin-left: -70%;
-    margin-top: -20%;
+           top: 93%;
+           left: 19%;
      position: absolute;
         }
        .span{
@@ -187,9 +205,10 @@ width: 100%;
             width: 12%;
             margin-top: 4%;
             margin-left: -7%;
-
-
-
+        }
+        .result-show{
+            margin-left: 45%;
+            margin-bottom: -20%;
         }
        img.middel{ width: 50%;
             margin-top:10px;
@@ -206,8 +225,8 @@ width: 100%;
 
         .los-name{
 
-            margin-left: 8%; color: blue;
-            margin-left: -17px;
+         color: blue;
+            margin-left: 72px;
 
         }
         .los-result{
@@ -224,13 +243,34 @@ width: 100%;
         .start{
             margin-top: 10%;
             margin-left: 20%;
-        }
+        }.answers-right{
+                     margin-bottom: 20px;
+                     margin-top: -10%;
+                     border-color: blue;
+                     width: 200px;
+                     margin-left: -41px;
+                     height: 90px;
+                     border-width: medium;
+                 }.answers-left{
+                                       margin-bottom: 20px;
+                                       margin-top: -10%;
+                                       border-color: blue;
+                                       border-width: medium;
+                                       width: 200px;
+                                       height: 90px;
+                                       margin-left: -84px;
+                                   }.next{
+                                                                           margin-left: -59px;
+                                                                           width: 300px;
+                                                                       }
+                                                                       }
+
     }
 @yield('styles')
     </STYLE>
 </head>
-<body class="">
-<div class="se-pre-con" ></div>
+<body class="" style="overflow-x: hidden;" >
+{{--<div class="se-pre-con" ></div>--}}
 
 @yield('content')
 </body>
