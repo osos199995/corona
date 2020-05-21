@@ -97,7 +97,7 @@ class QuestionSeeder extends Seeder
             'answer2'=>'996',
             'answer3'=>'937',
             'answer4'=>'998',
-            'true_answer'=>'999',
+            'true_answer'=>'937',
         ]);
         App\questions::create([
             'question'=>'اى من الحالات الاتية تستدى لبس الكمامة',
